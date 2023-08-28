@@ -44,7 +44,9 @@ module.exports = (_, argv) => ({
       name: 'harry_potter_app',
       filename: 'remoteEntry.js',
       remotes: {},
-      exposes: {},
+      exposes: {
+        './List': './src/components/List/index.tsx',
+      },
       shared: {
         ...deps,
         react: {

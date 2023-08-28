@@ -43,7 +43,10 @@ module.exports = (_, argv) => ({
     new ModuleFederationPlugin({
       name: "host",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        rick_and_morty: 'rick_and_morty_app@http://localhost:3000/remoteEntry.js',
+        harry_potter: 'harry_potter_app@http://localhost:3001/remoteEntry.js'
+      },
       exposes: {},
       shared: {
         ...deps,

@@ -44,7 +44,9 @@ module.exports = (_, argv) => ({
       name: 'rick_and_morty_app',
       filename: 'remoteEntry.js',
       remotes: {},
-      exposes: {},
+      exposes: {
+        './List': './src/components/List/List.tsx',
+      },
       shared: {
         ...deps,
         react: {
