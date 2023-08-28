@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { fetchCharacters } from '../services/api/characters';
-import Card from './Card';
-import { Character } from '../types/character';
-import Header from './Header';
+import { fetchCharacters } from '../../services/api/characters';
+import Card from '../Card/Card';
+import { Character } from '../../types/character';
+import Header from '../Header/Header';
+import { Grid, ListContainer } from './styles';
 
 const List = () => {
   const [characters, setCharacters] = useState<Character[]>([]);
@@ -14,9 +15,9 @@ const List = () => {
   }, []);
 
   return (
-    <div className="App container mx-auto p-4">
+    <ListContainer>
       <Header />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <Grid>
         {characters.map((character) => (
           <Card
             key={character.id}
@@ -26,9 +27,8 @@ const List = () => {
             species={character.species}
           />
         ))}
-        H
-      </div>
-    </div>
+      </Grid>
+    </ListContainer>
   );
 };
 
