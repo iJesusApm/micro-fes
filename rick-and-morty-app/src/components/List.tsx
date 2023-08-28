@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { fetchCharacters } from "../services/api/characters";
-import Card from "./Card";
-import { Character } from "../types/character";
+import React, { useState, useEffect } from 'react';
+import { fetchCharacters } from '../services/api/characters';
+import Card from './Card';
+import { Character } from '../types/character';
+import Header from './Header';
 
 const List = () => {
   const [characters, setCharacters] = useState<Character[]>([]);
@@ -9,12 +10,12 @@ const List = () => {
   useEffect(() => {
     fetchCharacters()
       .then((data) => setCharacters(data))
-      .catch((error) => console.error("Error fetching data:", error));
+      .catch((error) => console.error('Error fetching data:', error));
   }, []);
 
   return (
     <div className="App container mx-auto p-4">
-      <h1 className="text-3xl font-semibold mb-4">Rick and Morty Wiki</h1>
+      <Header />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {characters.map((character) => (
           <Card
@@ -25,6 +26,7 @@ const List = () => {
             species={character.species}
           />
         ))}
+        H
       </div>
     </div>
   );

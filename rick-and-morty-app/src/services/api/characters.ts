@@ -1,5 +1,5 @@
-import { Character } from "../../types/character";
-import { BASE_URL } from "../constants";
+import { Character } from '../../types/character';
+import { BASE_URL } from '../constants';
 
 interface ApiResponse {
   results: Character[];
@@ -9,8 +9,9 @@ export async function fetchCharacters(): Promise<Character[]> {
   try {
     const response = await fetch(`${BASE_URL}/character`);
     const data: ApiResponse = await response.json();
+    console.log({ result: data.results.length });
     return data.results;
   } catch (error) {
-    throw new Error("Error fetching data");
+    throw new Error('Error fetching data');
   }
 }
