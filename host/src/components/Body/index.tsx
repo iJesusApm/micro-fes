@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Button, StyledBody } from "./styles";
 
+import Empty from "../Empty";
+
 import RickAndMorty from "rick_and_morty/List";
 import HarryPotter from "harry_potter/List";
-import Empty from "../Empty";
 
 const Body = () => {
   const [option, setOption] = useState(0);
@@ -21,8 +22,12 @@ const Body = () => {
   return (
     <>
       <StyledBody>
-        <Button onClick={() => setOption(1)}>Rick and Morty</Button>
-        <Button onClick={() => setOption(2)}>Harry Potter</Button>
+        <Button onClick={() => setOption(1)}>
+          Rick and Morty 📺
+        </Button>
+        <Button onClick={() => setOption(2)}>
+          Harry Potter ✨
+        </Button>
       </StyledBody>
       <RenderOption />
     </>
