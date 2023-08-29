@@ -1,5 +1,5 @@
-import React from "react";
-import { StyledEmpty } from "./styles";
+import React from 'react';
+import { StyledEmpty } from './styles';
 
 const Empty = () => {
   return (

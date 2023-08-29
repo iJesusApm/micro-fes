@@ -1,9 +1,9 @@
-import React from "react";
-import { Button, StyledNavbar, Title } from "./styles";
+import React from 'react';
+import { Button, StyledNavbar, Title } from './styles';
 
 const Navbar = () => {
   const handlePress = () => {
-    console.log("change language");
+    console.log('change language');
   };
 
   return (

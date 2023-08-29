@@ -1,9 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import "./index.scss";
-import Navbar from "./components/Navbar";
-import Body from "./components/Body";
+import './index.scss';
+import Navbar from './components/Navbar';
+import Body from './components/Body';
 
 const App = () => (
   <div>
@@ -11,4 +11,4 @@ const App = () => (
     <Body />
   </div>
 );
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById('app'));
