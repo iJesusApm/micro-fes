@@ -1,25 +1,35 @@
 import useSwitchAppBLanguage from 'rick_and_morty/hooks/useSwitchAppBLanguage';
+import useSwitchAppCLanguage from 'harry_potter/hooks/useSwitchAppCLanguage';
+
 import appInstance from '../i18n';
 
 const useSwitchLanguage = () => {
-  console.log('se llamo');
   const switchAppBLanguageHook = useSwitchAppBLanguage();
+  const switchAppCLanguageHook = useSwitchAppCLanguage();
 
-  // App A
+  // Host
   const switchAppHostLanguage = (languageCode: string) =>
     appInstance.changeLanguage(languageCode);
-  // App B
+
+  // Rick and morty
   const switchAppBLanguage = (languageCode: string) =>
     switchAppBLanguageHook(languageCode);
+
+  // Harry Potter
+  const switchAppCLanguage = (languageCode: string) =>
+    switchAppCLanguageHook(languageCode);
+
   // All apps
   const switchAllLanguages = (languageCode: string) => {
     switchAppHostLanguage(languageCode);
     switchAppBLanguage(languageCode);
+    switchAppCLanguage(languageCode);
   };
 
   return {
     switchAppHostLanguage,
     switchAppBLanguage,
+    switchAppCLanguage,
     switchAllLanguages,
   };
 };

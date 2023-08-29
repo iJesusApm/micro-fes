@@ -46,6 +46,7 @@ module.exports = (_, argv) => ({
       remotes: {},
       exposes: {
         './List': './src/components/List/index.tsx',
+        './hooks/useSwitchAppCLanguage': './src/hooks/useSwitchLanguage',
       },
       shared: {
         ...deps,
