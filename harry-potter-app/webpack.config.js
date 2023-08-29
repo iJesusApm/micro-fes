@@ -4,8 +4,8 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 const deps = require('./package.json').dependencies;
 module.exports = (_, argv) => ({
   output: {
-    publicPath: 'https://micro-fes-harry-potter.vercel.app/',
-    // publicPath: 'http://localhost:3001/',
+    // publicPath: 'https://micro-fes-harry-potter.vercel.app/',
+    publicPath: 'http://localhost:3001/',
   },
 
   resolve: {
