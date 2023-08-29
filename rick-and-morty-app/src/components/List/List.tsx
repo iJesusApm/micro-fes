@@ -4,6 +4,7 @@ import Card from '../Card/Card';
 import { Character } from '../../types/character';
 import Header from '../Header/Header';
 import { Grid, ListContainer } from './styles';
+import AppBI18nWrapper from '../../context/LanguageContext';
 
 const List = () => {
   const [characters, setCharacters] = useState<Character[]>([]);
@@ -15,20 +16,22 @@ const List = () => {
   }, []);
 
   return (
-    <ListContainer>
-      <Header />
-      <Grid>
-        {characters.map((character) => (
-          <Card
-            key={character.id}
-            name={character.name}
-            image={character.image}
-            gender={character.gender}
-            species={character.species}
-          />
-        ))}
-      </Grid>
-    </ListContainer>
+    <AppBI18nWrapper>
+      <ListContainer>
+        <Header />
+        <Grid>
+          {characters.map((character) => (
+            <Card
+              key={character.id}
+              name={character.name}
+              image={character.image}
+              gender={character.gender}
+              species={character.species}
+            />
+          ))}
+        </Grid>
+      </ListContainer>
+    </AppBI18nWrapper>
   );
 };
 

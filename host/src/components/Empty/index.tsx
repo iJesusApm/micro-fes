@@ -1,10 +1,14 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 import { StyledEmpty } from './styles';
 
 const Empty = () => {
+  const { t } = useTranslation();
+
   return (
     <StyledEmpty>
-      <p>Selecciona una opción</p>
+      <p>{t('option')}</p>
     </StyledEmpty>
   );
 };

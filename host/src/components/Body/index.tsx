@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button, StyledBody } from './styles';
 
 import Empty from '../Empty';
@@ -7,6 +8,7 @@ import RickAndMorty from 'rick_and_morty/List';
 import HarryPotter from 'harry_potter/List';
 
 const Body = () => {
+  const { t } = useTranslation();
   const [option, setOption] = useState(0);
 
   const RenderOption = () => {
@@ -22,8 +24,8 @@ const Body = () => {
   return (
     <>
       <StyledBody>
-        <Button onClick={() => setOption(1)}>Rick and Morty 📺</Button>
-        <Button onClick={() => setOption(2)}>Harry Potter ✨</Button>
+        <Button onClick={() => setOption(1)}>{t('rickAndMorty')}</Button>
+        <Button onClick={() => setOption(2)}>{t('harryPotter')}</Button>
       </StyledBody>
       <RenderOption />
     </>

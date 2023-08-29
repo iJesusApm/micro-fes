@@ -1,15 +1,15 @@
 import React from 'react';
-import { Button, StyledNavbar, Title } from './styles';
+import { useTranslation } from 'react-i18next';
+import {StyledNavbar, Title } from './styles';
+import LanguageSwitcher from '../LanguageButton';
 
 const Navbar = () => {
-  const handlePress = () => {
-    console.log('change language');
-  };
+  const { t } = useTranslation();
 
   return (
     <StyledNavbar>
-      <Title>N5 Microfrontends - Characteres List</Title>
-      <Button onClick={handlePress}>Cambiar Idioma</Button>
+      <Title>N5 Microfrontends - {t('app')}</Title>
+      <LanguageSwitcher message="changeLanguage"/>
     </StyledNavbar>
   );
 };
