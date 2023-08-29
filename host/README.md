@@ -29,3 +29,10 @@ You can see a preview of the deployed application on Vercel [here](https://micro
 
 1. Start the application: `npm start` or `yarn start`
 2. Open your browser and go to `http://localhost:8080`
+
+NOTE: If u want to see entire Host project, first u need to run the Rick and Morty APP and Harry Potter App
+
+Follow the steps:
+- **Rick and Morty:** [GitHub](https://github.com/iJesusApm/micro-fes/tree/main/rick-and-morty-app)
+- **Harry Potter:** [GitHub](https://github.com/iJesusApm/micro-fes/tree/main/harry-potter-app)
+
