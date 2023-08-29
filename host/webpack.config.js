@@ -45,8 +45,12 @@ module.exports = (_, argv) => ({
       filename: 'remoteEntry.js',
       remotes: {
         rick_and_morty:
-          'rick_and_morty_app@http://localhost:3000/remoteEntry.js',
-        harry_potter: 'harry_potter_app@http://localhost:3001/remoteEntry.js',
+          'rick_and_morty_app@https://micro-fes-rick-and-morthy.vercel.app/remoteEntry.js',
+        harry_potter:
+          'harry_potter_app@https://micro-fes-harry-potter.vercel.app/remoteEntry.js',
+        // rick_and_morty:
+        //   'rick_and_morty_app@http://localhost:3000/remoteEntry.js',
+        // harry_potter: 'harry_potter_app@http://localhost:3001/remoteEntry.js',
       },
       exposes: {},
       shared: {
