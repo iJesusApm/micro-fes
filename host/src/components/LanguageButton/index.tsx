@@ -15,7 +15,11 @@ const LanguageSwitcher: React.FC<LanguageSwitcherProps> = ({ message }) => {
     const newLanguage = i18n.language === 'es' ? 'en' : 'es';
     switchAllLanguages(newLanguage);
   };
-  return <Button onClick={handleLanguageSwitch}>{t(message)}</Button>;
+  return (
+    <Button data-testid="language-switcher" onClick={handleLanguageSwitch}>
+      {t(message)}
+    </Button>
+  );
 };
 
 export default LanguageSwitcher;

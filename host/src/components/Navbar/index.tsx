@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import {StyledNavbar, Title } from './styles';
+import { StyledNavbar, Title } from './styles';
 import LanguageSwitcher from '../LanguageButton';
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <StyledNavbar>
       <Title>N5 Microfrontends - {t('app')}</Title>
-      <LanguageSwitcher message="changeLanguage"/>
+      <LanguageSwitcher message="changeLanguage" />
     </StyledNavbar>
   );
 };

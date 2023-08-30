@@ -3,5 +3,5 @@ export default {
   changeLanguage: 'Change Language 🇪🇸',
   rickAndMorty: 'Rick and Morty 📺',
   harryPotter: 'Harry Potter ✨',
-  option: 'Select an option'
+  option: 'Select an option',
 };
