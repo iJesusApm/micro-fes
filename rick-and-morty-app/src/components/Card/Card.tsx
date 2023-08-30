@@ -13,7 +13,7 @@ const Card: React.FC<CharacterProps> = ({ name, image, gender, species }) => {
   const { t } = useTranslation();
 
   return (
-    <CardContainer>
+    <CardContainer data-testid="character-card">
       <Image src={image} alt={name} />
       <CardInfo>
         <Title>{name}</Title>
