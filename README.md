@@ -32,6 +32,7 @@ The "Harry Potter App" project is another microfrontend that displays the charac
 - Styled Components with BEM Methodology
 - ESlint and Prettier for code formatting and linting rules
 - Translation libraries: react-i18next and i18next
+- Testing: Jest and React Testing Library
 
 ## Architecture
 

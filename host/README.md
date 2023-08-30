@@ -14,6 +14,7 @@ The "HOST" project is the main application that acts as the host for the microfr
 - React: JavaScript library for building user interfaces.
 - TypeScript: Typed programming language for JavaScript.
 - Styled Components: Library for writing component styles in a modular way.
+- Testing: Jest and React Testing Library
 
 ## Preview
 
@@ -36,3 +37,16 @@ Follow the steps:
 
 - **Rick and Morty:** [GitHub](https://github.com/iJesusApm/micro-fes/tree/main/rick-and-morty-app)
 - **Harry Potter:** [GitHub](https://github.com/iJesusApm/micro-fes/tree/main/harry-potter-app)
+
+## Unit Testing with Jest and React Testing Library
+
+This project utilizes Jest and React Testing Library for performing unit tests on its React components. Unit tests are a crucial part of software development that ensures your components function as expected.
+
+### Testing Setup
+
+To set up testing in this project, we've used Jest as our testing framework and React Testing Library for efficient interaction with React components.
+
+### Running Tests
+
+Make sure all development dependencies, including Jest and React Testing Library, are installed and use `npm test` or `yarn test`
+

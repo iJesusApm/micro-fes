@@ -15,6 +15,7 @@ A small web application that displays information about characters from the "Har
 - TypeScript: Typed programming language for JavaScript.
 - Styled Components: Library for writing component styles in a modular way.
 - Fetch API: Used to make requests to the [Harry Potter API](https://hp-api.onrender.com).
+- Testing: Jest and React Testing Library.
 
 ## Preview
 
@@ -30,3 +31,17 @@ You can see a preview of the deployed application on Vercel [here](https://micro
 
 1. Start the application: `npm start` or `yarn start`
 2. Open your browser and go to `http://localhost:3001`
+
+## Unit Testing with Jest and React Testing Library
+
+This project utilizes Jest and React Testing Library for performing unit tests on its React components. Unit tests are a crucial part of software development that ensures your components function as expected.
+
+### Testing Setup
+
+To set up testing in this project, we've used Jest as our testing framework and React Testing Library for efficient interaction with React components.
+
+### Running Tests
+    
+Make sure all development dependencies, including Jest and React Testing Library, are installed and use `npm test` or `yarn test`
+
+
