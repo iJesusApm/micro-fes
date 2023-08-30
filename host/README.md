@@ -42,10 +42,6 @@ Follow the steps:
 
 This project utilizes Jest and React Testing Library for performing unit tests on its React components. Unit tests are a crucial part of software development that ensures your components function as expected.
 
-### Testing Setup
-
-To set up testing in this project, we've used Jest as our testing framework and React Testing Library for efficient interaction with React components.
-
 ### Running Tests
 
 Make sure all development dependencies, including Jest and React Testing Library, are installed and use `npm test` or `yarn test`
